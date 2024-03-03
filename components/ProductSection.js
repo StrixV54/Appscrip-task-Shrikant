@@ -114,14 +114,14 @@ export default function ProductSection({ list }) {
           </ul>
         )}
 
-        <ul className="flex flex-wrap flex-row gap-4 sm:mt-8 mt-4 items-start sm:justify-between justify-evenly">
+        <ul className="gap-4 sm:mt-8 mt-4 items-start sm:justify-start justify-evenly grid xl:grid-cols-4 sm:grid-cols-autofit grid-cols-2 w-full">
           {productList &&
             productList.map((item, index) => (
               <li
                 key={index}
-                className="sm:max-w-[300px] sm:h-[465px] max-w-[190px] h-fit flex flex-col items-center justify-between overflow-hidden"
+                className="xl:max-w-[300px] lg:max-w-[230px] w-full h-fit flex flex-col items-center justify-between overflow-hidden"
               >
-                <div className="relative sm:w-[300px] sm:h-[400px] h-[200px] w-[160px]">
+                <div className="relative xl:w-[300px] xl:h-[400px] lg:w-[200px] lg:h-[300px] h-[200px] w-[160px]">
                   <Image
                     src={item?.image}
                     alt={item?.title}

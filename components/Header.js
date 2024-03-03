@@ -19,14 +19,14 @@ export default function Header() {
         </div>
       </div>
       <nav className="flex flex-col justify-between items-center border-b-slate-300 border-b-[1px]">
-        <div className="flex sm:my-8 my-6 sm:px-[100px] px-3 w-full items-center justify-between">
+        <div className="flex sm:my-8 my-6 lg:px-[100px] px-3 w-full items-center justify-between">
           <div className="flex gap-4 items-center">
             <Image
               src="/menu.png"
               height={36}
               width={36}
               alt="Options Menu"
-              className="sm:hidden sm:h-[36px] sm:w-[36px] h-[24px] w-[24px]"
+              className="lg:hidden sm:h-[36px] sm:w-[36px] h-[24px] w-[24px]"
             />
             <Image
               src="/logo.png"
@@ -36,7 +36,7 @@ export default function Header() {
               className="sm:h-[36px] sm:w-[36px] h-[24px] w-[24px]"
             />
           </div>
-          <div className="sm:text-4xl text-xl font-bold sm:translate-x-[100px] translate-x-6">
+          <div className="sm:text-4xl text-xl font-bold lg:translate-x-[100px] translate-x-6">
             LOGO
           </div>
           <div className="flex sm:gap-6 gap-4 items-center">
@@ -48,9 +48,9 @@ export default function Header() {
               height={24}
               width={24}
               alt="Profile"
-              className="hidden sm:block"
+              className="hidden lg:block"
             />
-            <div className="sm:flex hidden gap-1 items-center font-bold">
+            <div className="lg:flex hidden gap-1 items-center font-bold">
               ENG
               <Image src="/arrow-down.png" height={16} width={16} alt="Down Arrow" />
             </div>
