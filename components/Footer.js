@@ -1,3 +1,4 @@
+import { mettaMuse, quickLinks } from "@/utils/data-constants";
 import Image from "next/image";
 
 export default function Footer() {
@@ -16,7 +17,7 @@ export default function Footer() {
               placeholder="Enter your e-mail..."
               className="h-[48px] w-full max-w-[384px] px-4 bg-white text-black"
             />
-            <button className="h-[48px] max-w-[184px] min-w-[110px] text-gray-500 border border-gray-500 rounded-md uppercase">
+            <button className="h-[48px] max-w-[184px] w-full min-w-[110px] text-gray-500 border border-gray-500 rounded-md uppercase">
               Subscribe
             </button>
           </div>
@@ -33,7 +34,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-3">
             <h3 className="text-xl font-bold uppercase">Currency</h3>
-            <Image src="/currency.png" height={100} width={90} alt="search" />
+            <Image src="/currency.png" height={100} width={90} alt="Currency" />
             <div className="text-[12px] sm:block hidden">
               Transactions will be completed in Euros and a currency reference is available on
               hover.
@@ -46,22 +47,16 @@ export default function Footer() {
           <h3 className="text-xl font-bold sm:mb-5 flex justify-between items-center">
             mettā muse
             <Image
-              src="/arrow-right.png"
+              src="/arrow-right-white.png"
               height={20}
               width={20}
               className="cursor-pointer sm:hidden"
+              alt="Down Arrow"
             />
           </h3>
 
           <ul className="flex-col gap-4 sm:flex hidden">
-            {[
-              "About Us",
-              "Stories",
-              "Artisans",
-              "Boutiques",
-              "Contact Us",
-              "EU Compliances Docs",
-            ].map((item, idx) => (
+            {mettaMuse.map((item, idx) => (
               <li key={idx}>{item}</li>
             ))}
           </ul>
@@ -70,22 +65,15 @@ export default function Footer() {
           <h3 className="text-xl font-bold sm:mb-5 uppercase flex justify-between items-center">
             Quick Links
             <Image
-              src="/arrow-right.png"
+              src="/arrow-right-white.png"
               height={20}
               width={20}
               className="cursor-pointer sm:hidden"
+              alt="Down Arrow"
             />
           </h3>
           <ul className="flex-col gap-4 sm:flex hidden">
-            {[
-              "Orders & Shipping",
-              "Join/Login as a Seller",
-              "Payment & Pricing",
-              "Return & Refunds",
-              "FAQs",
-              "Privacy Policy",
-              "Terms & Conditions",
-            ].map((item, idx) => (
+            {quickLinks.map((item, idx) => (
               <li key={idx}>{item}</li>
             ))}
           </ul>
@@ -95,23 +83,24 @@ export default function Footer() {
             <h3 className="text-xl font-bold uppercase flex justify-between items-center">
               Follow us
               <Image
-                src="/arrow-right.png"
+                src="/arrow-right-white.png"
                 height={20}
                 width={20}
                 className="cursor-pointer sm:hidden"
+                alt="Down Arrow"
               />
             </h3>
             <Image
               src="/socials.png"
               height={100}
               width={100}
-              alt="search"
+              alt="Social Profiles"
               className="sm:block hidden"
             />
           </div>
           <div className="flex flex-col gap-3">
             <h3 className="text-xl font-bold">mettā muse ACCEPTS</h3>
-            <Image src="/payment-methods.png" height={100} width={400} alt="search" />
+            <Image src="/payment-methods.png" height={100} width={400} alt="Payment Methods" />
           </div>
         </div>
       </div>

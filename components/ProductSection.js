@@ -29,7 +29,7 @@ export default function ProductSection({ list }) {
             src="/arrow-left.png"
             height={16}
             width={16}
-            alt="down"
+            alt="Left Arrow"
             className={`transition duration-300 ${isSidebarToggle ? "rotate-0" : "rotate-180"}`}
           />
           {isSidebarToggle ? "Hide filter" : "Show filter"}
@@ -44,7 +44,7 @@ export default function ProductSection({ list }) {
             onClick={toggleSortList}
           >
             Recommended
-            <Image src="/arrow-down.png" height={16} width={16} alt="down" />
+            <Image src="/arrow-down.png" height={16} width={16} alt="Down Arrow" />
           </div>
           {isSortListToggle && (
             <ul className="flex flex-col py-4 items-end shadow-xl absolute top-[40px] right-0 z-50 bg-white w-[280px] border-2">
@@ -75,7 +75,13 @@ export default function ProductSection({ list }) {
         {isSidebarToggle && (
           <ul className="hidden sm:block min-w-[300px]" ref={sidebarRef}>
             <li className="flex gap-2 py-6 border-0 border-b-[1px] border-b-[#E5E5E5] ">
-              <Image src="/Checkbox.png" height={24} width={24} className=" cursor-pointer" />
+              <Image
+                src="/checkbox.png"
+                height={24}
+                width={24}
+                className="cursor-pointer"
+                alt="Checkbox"
+              />
               Customizable
             </li>
             {[
@@ -94,7 +100,13 @@ export default function ProductSection({ list }) {
               >
                 <div className="text-[1.13rem] font-bold flex justify-between items-center w-full">
                   {item}
-                  <Image src="/arrow-down.png" height={16} width={16} className="cursor-pointer" />
+                  <Image
+                    src="/arrow-down.png"
+                    height={16}
+                    width={16}
+                    className="cursor-pointer"
+                    alt="Down Arrow"
+                  />
                 </div>
                 <div>All</div>
               </li>
@@ -112,7 +124,7 @@ export default function ProductSection({ list }) {
                 <div className="relative sm:w-[300px] sm:h-[400px] h-[200px] w-[160px]">
                   <Image
                     src={item?.image}
-                    alt={item.title}
+                    alt={item?.title}
                     objectFit="contain"
                     layout="fill"
                     objectPosition="center"
@@ -121,13 +133,14 @@ export default function ProductSection({ list }) {
                 </div>
                 <div className="flex w-full items-center sm:mt-2 mt-2 gap-1">
                   <div className="truncate text-sm sm:text-[1.13rem] font-bold text-start uppercase">
-                    {item.title}
+                    {item?.title}
                   </div>
                   <Image
                     src={index === 2 ? "/heart-selected.png" : "/heart.png"}
                     height={24}
                     width={24}
                     className="w-[24px] h-[24px] sm:hidden block"
+                    alt="Favourite"
                   />
                 </div>
                 <div className="flex w-full justify-between sm:text-sm text-[#888792] text-[0.64rem] items-center sm:mt-1">
@@ -139,6 +152,7 @@ export default function ProductSection({ list }) {
                     height={24}
                     width={24}
                     className="hidden sm:block"
+                    alt="Favourite"
                   />
                 </div>
               </li>
