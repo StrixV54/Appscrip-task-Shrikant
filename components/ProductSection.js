@@ -121,14 +121,14 @@ export default function ProductSection({ list }) {
                 key={index}
                 className="xl:max-w-[300px] lg:max-w-[230px] w-full h-fit flex flex-col items-center justify-between overflow-hidden"
               >
-                <div className="relative xl:w-[300px] xl:h-[400px] lg:w-[200px] lg:h-[300px] h-[200px] w-[160px]">
+                <div className="relative xl:w-[300px] xl:h-[400px] lg:w-[200px] lg:h-[300px] h-[200px] w-[160px] bg-slate-100">
                   <Image
                     src={item?.image}
                     alt={item?.title}
                     objectFit="contain"
                     layout="fill"
                     objectPosition="center"
-                    className="border"
+                    className="mix-blend-multiply"
                   />
                 </div>
                 <div className="flex w-full items-center sm:mt-2 mt-2 gap-1">
