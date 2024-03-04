@@ -47,7 +47,7 @@ export default function Footer() {
           <h3 className="text-xl font-bold sm:mb-5 flex justify-between items-center">
             mettā muse
             <Image
-              src="/arrow-right-white.png"
+              src="/arrow-down-white.png"
               height={20}
               width={20}
               className="cursor-pointer sm:hidden"
@@ -65,7 +65,7 @@ export default function Footer() {
           <h3 className="text-xl font-bold sm:mb-5 uppercase flex justify-between items-center">
             Quick Links
             <Image
-              src="/arrow-right-white.png"
+              src="/arrow-down-white.png"
               height={20}
               width={20}
               className="cursor-pointer sm:hidden"
@@ -83,7 +83,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold uppercase flex justify-between items-center">
               Follow us
               <Image
-                src="/arrow-right-white.png"
+                src="/arrow-down-white.png"
                 height={20}
                 width={20}
                 className="cursor-pointer sm:hidden"
