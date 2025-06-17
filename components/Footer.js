@@ -11,7 +11,7 @@ export default function Footer() {
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. this is
             simply dummy text.
           </p>
-          <div className="footer-signup-text">Sign up for updates from mettā muse.</div>
+          <p className="footer-signup-text">Sign up for updates from mettā muse.</p>
           <div className="footer-email-form">
             <input
               placeholder="Enter your e-mail..."
@@ -24,27 +24,27 @@ export default function Footer() {
         </div>
         <div className="footer-contact-section">
           <div className="footer-contact-info">
-            <h3 className="footer-contact-title">CONTACT US</h3>
-            <h3 className="footer-call-us-title">CALL US</h3>
-            <ul className="footer-contact-details">
-              <div>+44 221 133 5360</div>
+            <h6 className="footer-contact-title">CONTACT US</h6>
+            <h6 className="footer-call-us-title">CALL US</h6>
+            <div className="footer-contact-details">
+              <p>+44 221 133 5360</p>
               <span className="footer-contact-separator">&#9670;</span>
-              <div>customercare@mettamuse.com</div>
-            </ul>
+              <p>customercare@mettamuse.com</p>
+            </div>
           </div>
           <div className="footer-currency">
-            <h3 className="footer-currency-title">Currency</h3>
+            <h6 className="footer-currency-title">Currency</h6>
             <Image className="footer-currency-image" src="/currency.png" height={40} width={90} alt="Currency" />
-            <div className="footer-currency-note">
+            <p className="footer-currency-note">
               Transactions will be completed in Euros and a currency reference is available on
               hover.
-            </div>
+            </p>
           </div>
         </div>
       </div>
       <div className="footer-bottom-section">
         <div className="footer-column">
-          <h3 className="footer-column-title">
+          <h6 className="footer-column-title">
             mettā muse
             <Image
               src="/arrow-down-white.png"
@@ -53,7 +53,7 @@ export default function Footer() {
               className="footer-dropdown-icon"
               alt="Down Arrow"
             />
-          </h3>
+          </h6>
 
           <ul className="footer-column-list">
             {mettaMuse.map((item, idx) => (

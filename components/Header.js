@@ -5,18 +5,18 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-banner">
-        <div className="header-banner-item">
+        <p className="header-banner-item">
           <Image src="/red-icon.png" height={16} width={16} alt="Red Banner Icon" />
           Lorem ipsum dolor
-        </div>
-        <div className="header-banner-item-hidden">
+        </p>
+        <p className="header-banner-item-hidden">
           <Image src="/red-icon.png" height={16} width={16} alt="Red Banner Icon" />
           Lorem ipsum dolor
-        </div>
-        <div className="header-banner-item-hidden">
+        </p>
+        <p className="header-banner-item-hidden">
           <Image src="/red-icon.png" height={16} width={16} alt="Red Banner Icon" />
           Lorem ipsum dolor
-        </div>
+        </p>
       </div>
       <nav className="header-nav">
         <div className="header-nav-top">
@@ -36,9 +36,9 @@ export default function Header() {
               className="header-logo-icon"
             />
           </div>
-          <div className="header-logo-text">
+          <p className="header-logo-text">
             LOGO
-          </div>
+          </p>
           <div className="header-right-section">
             <Image src="/search-normal.png" height={24} width={24} alt="Search" className="header-icon" />
             <Image src="/heart.png" height={24} width={24} alt="Heart" className="header-icon" />
@@ -50,19 +50,21 @@ export default function Header() {
               alt="Profile"
               className="header-icon header-profile-icon"
             />
-            <div className="header-language-selector">
+            <p className="header-language-selector">
               ENG
               <Image src="/arrow-down.png" height={16} width={16} alt="Down Arrow" className="header-arrow-icon" />
-            </div>
+            </p>
           </div>
         </div>
-        <ul className="header-nav-links">
-          {navLinks.map((item) => (
-            <li key={item} className="header-nav-link">
-              {item}
-            </li>
-          ))}
-        </ul>
+        <nav>
+          <ul className="header-nav-links">
+            {navLinks.map((item) => (
+              <li key={item} className="header-nav-link">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </nav>
       </nav>
     </header>
   );
