@@ -790,7 +790,7 @@ body {
 .footer-column-title {
   font-size: 1.25rem;
   font-weight: 700;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -798,6 +798,7 @@ body {
 
 @media (min-width: 640px) {
   .footer-column-title {
+    padding-bottom: 1.5rem;
   }
 }
 
